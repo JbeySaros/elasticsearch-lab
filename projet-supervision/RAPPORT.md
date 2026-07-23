@@ -73,9 +73,9 @@ Avant toute exploitation, vérification du mapping et des comptages (cf. `2-mise
 
 **Exploration Discover** :
 
-- Requête KQL n°1 : `statut: "critique"` → décrire ici combien de résultats et ce qu'ils montrent.
-- Requête KQL n°2 : `role: "web" and cpu_percent > 70` → décrire ici combien de résultats.
-- Filtre cliquable testé : décrire quel filtre (ex. clic sur une valeur de `hostname` dans la liste des champs) et son effet sur les résultats affichés.
+- Requête KQL n°1 : `statut: "critique"` → 3 cas pour des jobs batch bloqués, des espaces dique proche de saturation et des pic CPU
+- Requête KQL n°2 : `role: "web" and cpu_percent > 70` → 2 itérations a surveiller
+- Filtre cliquable testé : hostname is srv-db-01
 
 <!-- 📷 IMAGE 2 : capture Discover montrant la requête KQL n°1 (statut: "critique") et ses résultats -->
 ![Discover - requête KQL statut critique](./captures/02-discover-kql-1.png)

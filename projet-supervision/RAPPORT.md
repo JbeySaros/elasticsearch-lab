@@ -12,15 +12,15 @@ Avant toute exploitation, vérification du mapping et des comptages (cf. `2-mise
 
 | Champ | Type | Conforme |
 |---|---|---|
-| `@timestamp` | `date` | ✅ |
-| `hostname` | `keyword` | ✅ |
-| `environnement` | `keyword` | ✅ |
-| `role` | `keyword` | ✅ |
-| `statut` | `keyword` | ✅ |
-| `cpu_percent` | `float` | ✅ |
-| `memoire_percent` | `float` | ✅ |
-| `disque_percent` | `float` | ✅ |
-| `commentaire` | `text` | ✅ |
+| `@timestamp` | `date` | OK |
+| `hostname` | `keyword` | OK |
+| `environnement` | `keyword` | OK |
+| `role` | `keyword` | OK |
+| `statut` | `keyword` | OK |
+| `cpu_percent` | `float` | OK |
+| `memoire_percent` | `float` | OK |
+| `disque_percent` | `float` | OK |
+| `commentaire` | `text` | OK |
 
 **Comptages** :
 

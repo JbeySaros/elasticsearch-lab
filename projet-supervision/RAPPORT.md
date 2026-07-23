@@ -122,9 +122,7 @@ Bucket : X-axis → Date Histogram → `@timestamp` ; Metric : Average → `cpu_
 
 ## 6. Dashboard
 
-**Nom du dashboard** : décrire ici (ex. "Supervision infrastructure — vue d'ensemble").
-
-Panels assemblés : les 3 (ou 4) visualisations ci-dessus + un panel Markdown de contexte (nom du dashboard, date, index couvert, quoi regarder en premier).
+ Supervision infrastructure — vue d'ensemble
 
 <!-- 📷 IMAGE 9 : capture du dashboard complet, tous les panels visibles, y compris le panel Markdown de contexte -->
 ![Dashboard de supervision assemblé](./captures/09-dashboard-complet.png)
@@ -152,21 +150,21 @@ Panels assemblés : les 3 (ou 4) visualisations ci-dessus + un panel Markdown de
 ![Index Management - supervision-serveurs](./captures/12-index-management.png)
 
 Relevés :
-- Health : (yellow)
-- Docs count : (30, attendu 30)
-- Storage size : (à noter)
+- Health : yellow
+- Docs count : 30, attendu 30
+- Storage size : 10598 octets
 
 ### Policy ILM
 
 **Nom de la policy** : `supervision-serveurs-policy`.
 
-Phases configurées : **Hot** (rollover — préciser le déclencheur choisi : taille/âge/nb de docs) et **Delete** (préciser après combien de jours).
+Phases configurées : **Hot** (rollover — 30 jours ) et **Delete** ( 90 jours ).
 
 <!-- 📷 IMAGE 13 : capture de la policy ILM créée, Stack Management → Index Lifecycle Policies,
      montrant les phases Hot et Delete configurées -->
 ![Policy ILM supervision-serveurs-policy](./captures/13-ilm-policy.png)
 
-**Pourquoi ces phases** : décrire ici en une ou deux phrases (un index de supervision alimenté en continu grossit indéfiniment sans intervention ; Hot+rollover gère la taille de l'index actif, Delete purge les données trop anciennes pour éviter une croissance illimitée).
+**Pourquoi ces phases** :un index de supervision alimenté en continu grossit indéfiniment sans intervention ; Hot+rollover gère la taille de l'index actif, Delete purge les données trop anciennes pour éviter une croissance illimitée.
 
 ---
 
@@ -180,5 +178,3 @@ Phases configurées : **Hot** (rollover — préciser le déclencheur choisi : t
 - ✅ Filtre global et interaction testés.
 - ✅ Index Management consulté.
 - ✅ Policy ILM créée (Hot + Delete).
-
-*(Ajuste cette checklist finale une fois toutes les captures collées et vérifiées.)*

@@ -28,8 +28,6 @@ Avant toute exploitation, vérification du mapping et des comptages (cf. `2-mise
 - Répartition par serveur (`terms` sur `hostname`) : 5 buckets, `srv-web-01`, `srv-web-02`, `srv-db-01`, `srv-cache-01`, `srv-batch-01`, chacun à **6** documents (5 × 6 = 30).
 - Répartition par statut (`terms` sur `statut`) : `ok` = **24**, `attention` = **3**, `critique` = **3** (24 + 3 + 3 = 30).
 
-Ces trois totaux correspondent exactement à ce qu'annonçait la mise en place : les données sont cohérentes, on peut construire dessus.
-
 ---
 
 ## 2. Requêtes Query DSL
@@ -141,7 +139,7 @@ Panels assemblés : les 3 (ou 4) visualisations ci-dessus + un panel Markdown de
 <!-- 📷 IMAGE 11 : capture du dashboard juste après le clic sur le bucket "critique", montrant l'effet sur les autres panels -->
 ![Dashboard avec drill-down sur critique](./captures/11-dashboard-drilldown.png)
 
-**Différence observée entre les deux** : décrire ici en une ou deux phrases (filtre global = manuel/persistant vs interaction = généré par un clic, temporaire).
+**Différence observée entre les deux** : le filtre global (image 10) est ajouté manuellement par toi et reste actif tant qu'il n'est pas retiré, alors que l'interaction (image 11) vient d'un clic direct sur un panel et est plus ponctuelle/exploratoire — dans les deux cas Kibana recalcule tous les panels du dashboard, mais l'origine et la persistance diffèrent.
 
 ---
 
@@ -154,8 +152,8 @@ Panels assemblés : les 3 (ou 4) visualisations ci-dessus + un panel Markdown de
 ![Index Management - supervision-serveurs](./captures/12-index-management.png)
 
 Relevés :
-- Health : (à noter, ex. `yellow`)
-- Docs count : (à noter, attendu 30)
+- Health : (yellow)
+- Docs count : (30, attendu 30)
 - Storage size : (à noter)
 
 ### Policy ILM

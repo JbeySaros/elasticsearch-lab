@@ -1,0 +1,24 @@
+{ "index": { "_index": "produits", "_id": "1" } }
+{ "nom": "Clavier Mécanique RGB", "categorie": "informatique", "prix": 59.90, "en_stock": true, "date_ajout": "2026-01-10" }
+{ "index": { "_index": "produits", "_id": "2" } }
+{ "nom": "Souris sans fil", "categorie": "informatique", "prix": 19.90, "en_stock": true, "date_ajout": "2026-02-03" }
+{ "index": { "_index": "produits", "_id": "3" } }
+{ "nom": "Écran 27 pouces 4K", "categorie": "informatique", "prix": 249.00, "en_stock": false, "date_ajout": "2026-01-22" }
+{ "index": { "_index": "produits", "_id": "4" } }
+{ "nom": "Casque audio filaire", "categorie": "informatique", "prix": 34.50, "en_stock": true, "date_ajout": "2026-03-01" }
+{ "index": { "_index": "produits", "_id": "5" } }
+{ "nom": "Chaise de bureau ergonomique", "categorie": "mobilier", "prix": 189.00, "en_stock": true, "date_ajout": "2026-01-15" }
+{ "index": { "_index": "produits", "_id": "6" } }
+{ "nom": "Bureau réglable en hauteur", "categorie": "mobilier", "prix": 320.00, "en_stock": true, "date_ajout": "2026-02-20" }
+{ "index": { "_index": "produits", "_id": "7" } }
+{ "nom": "Lampe de bureau LED", "categorie": "mobilier", "prix": 24.90, "en_stock": false, "date_ajout": "2026-03-05" }
+{ "index": { "_index": "produits", "_id": "8" } }
+{ "nom": "Cahier ligné A4", "categorie": "papeterie", "prix": 2.50, "en_stock": true, "date_ajout": "2026-01-05" }
+{ "index": { "_index": "produits", "_id": "9" } }
+{ "nom": "Stylo plume", "categorie": "papeterie", "prix": 8.90, "en_stock": true, "date_ajout": "2026-02-10" }
+{ "index": { "_index": "produits", "_id": "10" } }
+{ "nom": "Bloc-notes repositionnable", "categorie": "papeterie", "prix": 3.20, "en_stock": true, "date_ajout": "2026-03-12" }
+{ "index": { "_index": "produits", "_id": "11" } }
+{ "nom": "Clavier mécanique compact", "categorie": "informatique", "prix": 79.00, "en_stock": true, "date_ajout": "2026-03-18" }
+{ "index": { "_index": "produits", "_id": "12" } }
+{ "nom": "Support pour écran", "categorie": "informatique", "prix": 15.00, "en_stock": false, "date_ajout": "2026-02-28" }
